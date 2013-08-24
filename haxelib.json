@@ -1,0 +1,12 @@
+{
+ "name": "away3d.hx",
+ "url" : "https://github.com/as3boyan/Away3DAndAwayPhysicsHx/",
+ "license": "Apache License, Version 2.0",
+ "tags": ["away3d","3d","game","framework","flash","gpu","stage3D"],
+ "description": "Haxe externs for Away3D(with Away Physics)",
+ "version": "1.0.0",
+ "releasenote": "release",
+ "contributors": ["as3boyan"],
+ "dependencies": { 
+ }
+}

@@ -1,0 +1,48 @@
+package away3d.animators.data;
+
+extern class AnimationRegisterCache extends away3d.materials.compilation.ShaderRegisterCache {
+	var colorAddTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var colorAddVary : away3d.materials.compilation.ShaderRegisterElement;
+	var colorMulTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var colorMulVary : away3d.materials.compilation.ShaderRegisterElement;
+	var fragmentConstantData : flash.Vector<Float>;
+	var hasBillboard : Bool;
+	var hasColorAddNode : Bool;
+	var hasColorMulNode : Bool;
+	var hasUVNode : Bool;
+	var needFragmentAnimation : Bool;
+	var needUVAnimation : Bool;
+	var needVelocity : Bool;
+	var numFragmentConstant(default,never) : Int;
+	var numVertexConstant(default,never) : Int;
+	var positionAttribute : away3d.materials.compilation.ShaderRegisterElement;
+	var positionTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var rotationRegisters : flash.Vector<away3d.materials.compilation.ShaderRegisterElement>;
+	var scaleAndRotateTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var sourceRegisters : flash.Vector<String>;
+	var targetRegisters : flash.Vector<String>;
+	var uvAttribute : away3d.materials.compilation.ShaderRegisterElement;
+	var uvTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var uvVar : away3d.materials.compilation.ShaderRegisterElement;
+	var velocityTarget : away3d.materials.compilation.ShaderRegisterElement;
+	var vertexConstantData : flash.Vector<Float>;
+	var vertexLife : away3d.materials.compilation.ShaderRegisterElement;
+	var vertexOneConst : away3d.materials.compilation.ShaderRegisterElement;
+	var vertexTime : away3d.materials.compilation.ShaderRegisterElement;
+	var vertexTwoConst : away3d.materials.compilation.ShaderRegisterElement;
+	var vertexZeroConst : away3d.materials.compilation.ShaderRegisterElement;
+	function new(p1 : String) : Void;
+	function getColorCombinationCode(p1 : String) : String;
+	function getColorPassCode() : String;
+	function getCombinationCode() : String;
+	function getInitCode() : String;
+	function getRegisterIndex(p1 : away3d.animators.nodes.AnimationNodeBase, p2 : Int) : Int;
+	function initColorRegisters() : String;
+	function setDataLength() : Void;
+	function setFragmentConst(p1 : Int, p2 : Float = 0, p3 : Float = 0, p4 : Float = 0, p5 : Float = 0) : Void;
+	function setRegisterIndex(p1 : away3d.animators.nodes.AnimationNodeBase, p2 : Int, p3 : Int) : Void;
+	function setUVSourceAndTarget(p1 : String, p2 : String) : Void;
+	function setVertexConst(p1 : Int, p2 : Float = 0, p3 : Float = 0, p4 : Float = 0, p5 : Float = 0) : Void;
+	function setVertexConstFromMatrix(p1 : Int, p2 : flash.geom.Matrix3D) : Void;
+	function setVertexConstFromVector(p1 : Int, p2 : flash.Vector<Float>) : Void;
+}

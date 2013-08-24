@@ -1,0 +1,48 @@
+package away3d.core.base;
+
+extern class Object3D extends away3d.library.assets.NamedAssetBase {
+	var _controller : away3d.controllers.ControllerBase;
+	var backVector(default,never) : flash.geom.Vector3D;
+	var downVector(default,never) : flash.geom.Vector3D;
+	var eulers : flash.geom.Vector3D;
+	var extra : Dynamic;
+	var forwardVector(default,never) : flash.geom.Vector3D;
+	var leftVector(default,never) : flash.geom.Vector3D;
+	var pivotPoint : flash.geom.Vector3D;
+	var position : flash.geom.Vector3D;
+	var rightVector(default,never) : flash.geom.Vector3D;
+	var rotationX : Float;
+	var rotationY : Float;
+	var rotationZ : Float;
+	var scaleX : Float;
+	var scaleY : Float;
+	var scaleZ : Float;
+	var transform : flash.geom.Matrix3D;
+	var upVector(default,never) : flash.geom.Vector3D;
+	var x : Float;
+	var y : Float;
+	var z : Float;
+	var zOffset : Int;
+	function new() : Void;
+	function clone() : Object3D;
+	function dispose() : Void;
+	function disposeAsset() : Void;
+	function invalidateTransform() : Void;
+	function lookAt(p1 : flash.geom.Vector3D, ?p2 : flash.geom.Vector3D) : Void;
+	function moveBackward(p1 : Float) : Void;
+	function moveDown(p1 : Float) : Void;
+	function moveForward(p1 : Float) : Void;
+	function moveLeft(p1 : Float) : Void;
+	function movePivot(p1 : Float, p2 : Float, p3 : Float) : Void;
+	function moveRight(p1 : Float) : Void;
+	function moveTo(p1 : Float, p2 : Float, p3 : Float) : Void;
+	function moveUp(p1 : Float) : Void;
+	function pitch(p1 : Float) : Void;
+	function roll(p1 : Float) : Void;
+	function rotate(p1 : flash.geom.Vector3D, p2 : Float) : Void;
+	function rotateTo(p1 : Float, p2 : Float, p3 : Float) : Void;
+	function scale(p1 : Float) : Void;
+	function translate(p1 : flash.geom.Vector3D, p2 : Float) : Void;
+	function translateLocal(p1 : flash.geom.Vector3D, p2 : Float) : Void;
+	function yaw(p1 : Float) : Void;
+}

@@ -1,0 +1,14 @@
+-away3d.textures.RenderCubeTexture.size;
+-cmodule.AwayPhysics.DynamicProxy.setProperty;
+-cmodule.AwayPhysics.DynamicProxy.deleteProperty;
+-cmodule.AwayPhysics.DynamicProxy.getDescendants;
+-cmodule.AwayPhysics.DynamicProxy.nextName;
+-cmodule.AwayPhysics.DynamicProxy.callProperty;
+-cmodule.AwayPhysics.DynamicProxy.hasProperty;
+-cmodule.AwayPhysics.DynamicProxy.nextNameIndex;
+-cmodule.AwayPhysics.DynamicProxy.isAttribute;
+-cmodule.AwayPhysics.DynamicProxy.getProperty;
+-cmodule.AwayPhysics.DynamicProxy.nextValue;
+-cmodule.AwayPhysics.CBuffer.free;
+-away3d.textures.RenderTexture.width;
+-away3d.textures.RenderTexture.height;

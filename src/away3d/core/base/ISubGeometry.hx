@@ -1,0 +1,41 @@
+package away3d.core.base;
+
+extern interface ISubGeometry {
+	var UVData(default,never) : flash.Vector<Float>;
+	var UVOffset(default,never) : Int;
+	var UVStride(default,never) : UInt;
+	var autoDeriveVertexNormals : Bool;
+	var autoDeriveVertexTangents : Bool;
+	var faceNormals(default,never) : flash.Vector<Float>;
+	var indexData(default,never) : flash.Vector<UInt>;
+	var numTriangles(default,never) : UInt;
+	var numVertices(default,never) : UInt;
+	var parentGeometry : Geometry;
+	var scaleU(default,never) : Float;
+	var scaleV(default,never) : Float;
+	var secondaryUVOffset(default,never) : Int;
+	var secondaryUVStride(default,never) : UInt;
+	var vertexData(default,never) : flash.Vector<Float>;
+	var vertexNormalData(default,never) : flash.Vector<Float>;
+	var vertexNormalOffset(default,never) : Int;
+	var vertexNormalStride(default,never) : UInt;
+	var vertexOffset(default,never) : Int;
+	var vertexPositionData(default,never) : flash.Vector<Float>;
+	var vertexStride(default,never) : UInt;
+	var vertexTangentData(default,never) : flash.Vector<Float>;
+	var vertexTangentOffset(default,never) : Int;
+	var vertexTangentStride(default,never) : UInt;
+	function activateSecondaryUVBuffer(p1 : Int, p2 : away3d.core.managers.Stage3DProxy) : Void;
+	function activateUVBuffer(p1 : Int, p2 : away3d.core.managers.Stage3DProxy) : Void;
+	function activateVertexBuffer(p1 : Int, p2 : away3d.core.managers.Stage3DProxy) : Void;
+	function activateVertexNormalBuffer(p1 : Int, p2 : away3d.core.managers.Stage3DProxy) : Void;
+	function activateVertexTangentBuffer(p1 : Int, p2 : away3d.core.managers.Stage3DProxy) : Void;
+	function applyTransformation(p1 : flash.geom.Matrix3D) : Void;
+	function clone() : ISubGeometry;
+	function cloneWithSeperateBuffers() : SubGeometry;
+	function dispose() : Void;
+	function fromVectors(p1 : flash.Vector<Float>, p2 : flash.Vector<Float>, p3 : flash.Vector<Float>, p4 : flash.Vector<Float>) : Void;
+	function getIndexBuffer(p1 : away3d.core.managers.Stage3DProxy) : flash.display3D.IndexBuffer3D;
+	function scale(p1 : Float) : Void;
+	function scaleUV(p1 : Float = 1, p2 : Float = 1) : Void;
+}
