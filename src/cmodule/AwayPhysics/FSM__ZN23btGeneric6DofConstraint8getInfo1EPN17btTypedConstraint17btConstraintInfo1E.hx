@@ -1,0 +1,6 @@
+package cmodule.AwayPhysics;
+
+extern class FSM__ZN23btGeneric6DofConstraint8getInfo1EPN17btTypedConstraint17btConstraintInfo1E extends Machine {
+	function new() : Void;
+	static function start() : Void;
+}
