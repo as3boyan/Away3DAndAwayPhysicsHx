@@ -4,7 +4,7 @@
 	<compilerflag name="-swf-lib Away3D.swc" if="flash" />
 	<compilerflag name="-swf-lib AwayPhysics.swc" if="flash" />
 	<compilerflag name="--macro patchTypes('away3d.patch')" if="flash" />
-	<app swf-version="11.2" />
+	<app swf-version="11.5" />
 	<haxedef name="as3_native" />
 
 </project>
